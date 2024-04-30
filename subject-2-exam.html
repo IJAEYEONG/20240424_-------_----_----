@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subejct-2 훈련생명</title>
+</head>
+<body>
+  <!-- <div id="root">
+
+  </div> -->
+  <script>
+      const styleElement = document.createElement("style");
+      styleElement.innerHTML = "html, body {margin: 0; padding:0; box-sizing:border-box; overflow-x:hidden;}";
+      document.head.appendChild(styleElement);
+      const box =document.createElement('div');
+      box.setAttribute('id','root');
+      box.style.display='grid';
+      box.style.gridTemplateColumns='repeat(5,1fr)';
+      box.style.gridTemplateRows='repeat(4,1fr)';
+      box.style.gap='1vw';
+      box.style.width='100vw';
+      box.style.minHeight='100vh';
+      box.style.height='auto';
+      box.style.margin='2vw auto';
+      box.style.gridAutoRows='minmax(150px,auto)';
+      const media=document.querySelectorAll('root div');
+      
+      
+      for(let i=0; i<=19; i++){
+        const view_box=document.createElement('div');
+        view_box.style.display='flex';
+        view_box.style.alignItems='center';
+        view_box.style.justifyContent='center';
+        view_box.style.fontSize='1rem';
+        view_box.style.backgroundColor='#f0f0f0';
+        view_box.style.border='1px solid #ccc';
+        view_box.style.padding='1vw';
+        box.appendChild(view_box);
+      }
+      document.body.appendChild(box);
+  </script>
+
+  
+  <script src="./basic-data.js"></script>
+</body>
+</html>
